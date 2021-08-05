@@ -1,0 +1,474 @@
+:root {
+    --main-color: #031D5B;
+    --cta-color: #F8765E;
+    --white-color: #ffffff;
+    --gray-color: #cdcdcd;
+    --s-space: 10px;
+    --m-space: 20px;
+    --l-space: 30px;
+    --xl-space: 40px;
+    --fs-xl: 30px;
+    --fs-l: 24px;
+    --fs-m: 20px;
+    --fs-r: 16px;
+    --fs-s: 12px;
+    --main-font: 'Antonio', sans-serif;
+    --body-font: 'Montserrat', sans-serif;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: var(--main-font);
+  }
+  
+  .row {
+    width: 100%;
+  }
+  
+  .container {
+    padding: 0px var(--l-space);
+  }
+  
+  main {
+    min-width: 100%;
+  }
+  
+  button:hover { 
+    color: var(--cta-color);
+}
+
+  @media (min-width: 1024px) {
+    .container {
+      padding: 0;
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* HEADER */
+  
+  header {
+    background-color: var(--main-color);
+    color: var(--white-color);
+  }
+  
+  header .container {
+    padding: var(--m-space) var(--l-space);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header h1 {
+    text-transform: uppercase;
+    margin-bottom: var(--m-space);
+    font-size: var(--fs-l);
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+  }
+  
+  nav ul li:nth-child(2) {
+    margin: 0px var(--l-space);
+    text-align: center;
+  }
+  
+  nav ul a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: var(--fs-m);
+    align-items: center;
+  }
+
+  
+  @media (min-width: 1020px) {
+    header .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin-right: 30px;
+        justify-content: space-between; 
+      }
+  }
+
+  
+  /* HERO */
+  
+  .hero {
+    background-color: var(--main-color);
+    padding-top: var(--l-space);
+    padding-bottom: 100px;
+  
+  }
+  
+  .hero-img-ct {
+    height: 200px;
+    max-width: 99%;
+    background-image: url(../LysbetGreece.jpg);
+    background-repeat: repeat; 
+    background-size: 80px 100px;
+    
+    }
+    
+
+  .hero-img-ct img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+      color: var(--white-color);
+      font-size: var(--fs-xl);
+      text-align: center; 
+  }
+  
+  .hero h2 {
+    font-weight: bold;
+    font-size: var(--fs-m);
+    color: var(--white-color);
+    text-align: center;
+    line-height: var(--xl-space);
+    padding-bottom: var(--m-space);
+  }
+  
+  .hero p {
+    color: var(--white-color);
+    line-height: var(--l-space);
+    font-size: var(--fs-m);
+    text-align: center;
+  }
+  
+  .hero form {
+    display: flex;
+    flex-direction: column;
+    padding: var(--l-space) 0px;
+  }
+  
+  .hero input,
+  .hero button {
+    border: var(--white-color);
+    padding: var(--m-space);
+    font-size: var(--fs-m);
+  }
+  
+  .hero input {
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.3);
+    margin: var(--m-space) 0px;
+  }
+  
+  .hero input::placeholder {
+    color: var(--gray-color);
+    font-style: var(--main-font);
+  }
+  
+  .hero button {
+    background-color: var(--main-color);
+    max-width: 200px;
+    margin-left: 60px;
+    border-style: solid;
+    text-align: center;
+    color: var( --white-color);
+    font: var( --main-font);
+    font-size: x-large;
+}
+
+.hero button:hover{
+    background-color: var(--cta-color);
+}
+  
+  @media (min-width: 1024px) {
+    .hero {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  
+    .hero form {
+      display: flex;
+      flex-direction: row;
+      padding: var(--l-space) 0px;
+      align-items: baseline
+    
+    }
+  
+    .hero button {
+      background-color: var(--cta-color);
+      text-align: center;
+      margin-left:20px;
+      color: var(--white-color);
+    } 
+  
+  .hero form button,
+    .hero form input {
+      max-height: 50px;
+      padding: 10px 15px;
+    }
+}
+
+    /* STORY */ 
+
+    .story {
+        background-color: var(--main-color);
+        padding-top: var(--l-space);
+        padding-bottom: 100px;
+    }
+
+    .story-content-ct h2 {
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 3px solid var(--main-color);
+            padding-bottom: var(--s-space);
+            margin-top: 50px;
+          }
+
+    .story-content-ct p:first-of-type{
+        text-align: center;
+        border-bottom: 3px solid var(--main-color);
+        padding-bottom: var(--m-space);
+        margin-bottom: 20px;
+    }
+
+     .story p {
+         font: var(--body-font);
+     }   
+  
+  /* VALUE PROPOSITION */
+  
+  .experience-card-ct {
+    box-shadow: 0px 10px 44px 0px rgba(0, 0, 0, 0.48);
+    padding: var(--l-space) var(--m-space);
+    border-radius: var(--m-space);
+    margin-top: -500px;
+    background-color: var(--main-color);
+    position: absolute;
+    width: 328px;
+    height: 820px;
+    left: 24px;
+    top: 2056px;
+  }
+  
+  .experience-card {
+    text-align: center;
+    padding: var(--s-space) 0px;
+    margin: var(--s-space) 0px;
+  }
+  
+  .experience-card-img-ct {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .experience-card h3 {
+    font-weight: bold;
+    border-bottom: 3px solid var(--main-color);
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 2px;
+  }
+  
+  .experience-card p {
+    line-height: var(--l-space);
+    color: var(--white-color);
+    margin-top: 0px;
+    padding-top: 0px; 
+  }
+
+
+  /* VALUE PROPOSITION */
+
+.value-proposition-card-ct {
+    box-shadow: 0px 10px 44px 0px rgba(0, 0, 0, 0.48);
+    padding: var(--l-space) var(--m-space);
+    border-radius: var(--m-space);
+    margin-top: -70px;
+    background-color: var(--main-color);
+  }
+  
+  .value-proposition-card {
+    text-align: start;
+    padding: var(--s-space) 0px;
+    margin: var(--s-space) 0px;
+  }
+  
+  .value-proposition-card-img-ct {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .value-proposition-card h3 {
+    font-weight: bold;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    padding-bottom: var(--s-space);
+    margin: var(--m-space) 0px;
+  }
+  
+  .value-proposition-card p {
+    line-height: var(--l-space);
+    text-align: start;
+  }
+  
+  
+  /* CONTACT */
+  
+  .contact-ct {
+    margin-top: 1100px;
+    margin-bottom: 80px;
+  }
+  
+  .contact-img-ct {
+      margin-left: 90px;
+  }
+
+  .contact-ct h2 {
+    font-size: var(--fs-xl);
+    color: var(--main-color);
+    text-align: center;
+    padding: var(--s-space);
+    margin: var(--s-space) 0px;
+    line-height: var(--xl-space);
+    font-weight: bold;
+  }
+  
+  .contact-ct p {
+    color: var(--gray-color);
+    text-align: center;
+    margin: var(--s-space) 0px;
+    font-size: var(--fs-l);
+    font-weight: bold;
+  }
+  
+  .contact-ct form {
+    display: flex;
+    flex-direction: column;
+    padding: var(--l-space) 0px;
+  }
+  
+  .contact-ct input,
+  .contact-ct button {
+    border: none;
+    padding: var(--m-space);
+    font-size: var(--fs-m);
+    border-radius: var(--m-space);
+  }
+  
+  .contact-ct input {
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.3);
+    margin: var(--m-space) 0px;
+  }
+  
+  .contact-ct input::placeholder {
+    color: var(--gray-color);
+  }
+  
+  .contact-ct button {
+    background-color: var(--cta-color);
+    text-align: center;
+    color: var(--white-color);
+  }
+  
+  /* FOOTER  */
+  
+  .footer {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--m-space);
+    max-width: 350px;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+  
+  .footer ul {
+    list-style: none;
+    display: flex;
+    margin-top: var(--m-space);
+    margin-left: -30px;
+  }
+  
+  .footer ul a {
+    text-decoration: none;
+    color: var(--white-color);
+  }
+  
+  .footer li:nth-child(2) a {
+    margin: 0 var(--l-space);
+  }
+  
+  .footer li:nth-child(2) a::before {
+    content: "/";
+    height: 10px;
+    width: 2px;
+    color: var(--white-color);
+    margin-right: 25px;
+  }
+  
+  .footer li:nth-child(2) a::after {
+    content: "/";
+    height: 10px;
+    width: 2px;
+    color: var(--white-color);
+    margin-left: 25px;
+  }
+
+
+    /* LESSONS LEARNED:
+    
+    
+    
+    - MEDIA-QUERIE WITHOUT } WILL MAKE MOBILE CONTENT GO LOCO 
+    - GOOGLE FONTS: TO SEARCH FOR FONT-STYLES AND IMPLEMENT THEM
+    - PICTURES TO BE FOUND FROM THE RIGHT DIRECTORY!! ../
+    - LIST-STYLE: NONE; TO REMOVE BULLITS
+    - ADD BACKGROUND-SIZE 80PX, 100PX WHEN YOU WANT THE PICTURE TO REPEAT ITSELF
+    - <a href='mailto:agentavery@sample.com?subject=subject text'></a>
+    - WHEN THE FOLDER BECOMES RED: THERE IS A BUG
+    - STAY CALM AND DEBUG
+
+    
+    
+    
+    OPEN QUESTIONS:
+    - how to declare multiple font types? main and body?
+    - many elements I fixed by providing CSS inline (added to the html element) like: size, color, H1, H2, H3, p etc. 
+    - how to css the buttons in different states?   button:hover { 
+    color: var(--cta-color);
+    - how do I make the buttons clickable?
+    - images with a border: white
+}
+    
+
+  .experience-card h3 {
+    font-weight: bold;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    text-align: center;
+    /* margin: var(--l-space) 0px;
+    margin-left: 110px;
+    color: var(--white-color);
+  }
+  
+  .experience-card p {
+    line-height: var(--l-space);
+    text-align: center;
+    color: var(--white-color);
+  }
+TEXT ALGIN: CENTER. only works with the <p> not with the <h3>
+    */
